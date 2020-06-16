@@ -39,20 +39,9 @@ namespace MyCodeTools
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void Form1_Resize(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Minimized)
-            {
-                this.Visible = false;
-                this.notifyIcon1.Visible = true;
-            }
-        }
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            //this.Visible = true;
-            //this.WindowState = FormWindowState.Normal;
-            //this.Show();
             if (WindowState == FormWindowState.Minimized)
             {
                 //还原窗体显示    
@@ -63,6 +52,49 @@ namespace MyCodeTools
                 this.ShowInTaskbar = true;
                 //托盘区图标隐藏
                 notifyIcon1.Visible = false;
+            }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("toolStripMenuItem1_Click");
+            return;
+            WindowState = FormWindowState.Normal;
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("是否确认退出程序？", "退出", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                // 关闭所有的线程
+                this.Dispose();
+                this.Close();
+            }
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            //判断是否选择的是最小化按钮
+            if (WindowState == FormWindowState.Minimized)
+            {
+                //隐藏任务栏区图标
+                this.ShowInTaskbar = false;
+                //图标显示在托盘区
+                notifyIcon1.Visible = true;
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("是否确认退出程序？", "退出", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                // 关闭所有的线程
+                this.Dispose();
+                this.Close();
+            }
+            else
+            {
+                e.Cancel = true;
             }
         }
     }
