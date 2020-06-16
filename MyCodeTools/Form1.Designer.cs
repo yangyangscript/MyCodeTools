@@ -38,6 +38,8 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnRegedit = new System.Windows.Forms.Button();
+            this.btnRegeditCancel = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +84,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(375, 123);
+            this.button2.Location = new System.Drawing.Point(375, 111);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(101, 33);
             this.button2.TabIndex = 3;
@@ -113,11 +115,33 @@
             this.toolStripMenuItem2.Text = "退出";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
+            // btnRegedit
+            // 
+            this.btnRegedit.Location = new System.Drawing.Point(375, 367);
+            this.btnRegedit.Name = "btnRegedit";
+            this.btnRegedit.Size = new System.Drawing.Size(101, 33);
+            this.btnRegedit.TabIndex = 4;
+            this.btnRegedit.Text = "开机启动";
+            this.btnRegedit.UseVisualStyleBackColor = true;
+            this.btnRegedit.Click += new System.EventHandler(this.btnRegedit_Click);
+            // 
+            // btnRegeditCancel
+            // 
+            this.btnRegeditCancel.Location = new System.Drawing.Point(375, 406);
+            this.btnRegeditCancel.Name = "btnRegeditCancel";
+            this.btnRegeditCancel.Size = new System.Drawing.Size(101, 33);
+            this.btnRegeditCancel.TabIndex = 5;
+            this.btnRegeditCancel.Text = "取消启动";
+            this.btnRegeditCancel.UseVisualStyleBackColor = true;
+            this.btnRegeditCancel.Click += new System.EventHandler(this.btnRegeditCancel_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRegeditCancel);
+            this.Controls.Add(this.btnRegedit);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.cbCopy);
             this.Controls.Add(this.tbxShow);
@@ -147,6 +171,8 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.Button btnRegedit;
+        private System.Windows.Forms.Button btnRegeditCancel;
     }
 }
 
