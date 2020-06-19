@@ -40,6 +40,8 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnRegedit = new System.Windows.Forms.Button();
             this.btnRegeditCancel = new System.Windows.Forms.Button();
+            this.StringIn = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,7 +97,7 @@
             // 
             this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Text = "我的代码工具";
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
@@ -135,11 +137,32 @@
             this.btnRegeditCancel.UseVisualStyleBackColor = true;
             this.btnRegeditCancel.Click += new System.EventHandler(this.btnRegeditCancel_Click);
             // 
+            // StringIn
+            // 
+            this.StringIn.Location = new System.Drawing.Point(375, 150);
+            this.StringIn.Name = "StringIn";
+            this.StringIn.Size = new System.Drawing.Size(101, 33);
+            this.StringIn.TabIndex = 6;
+            this.StringIn.Text = "StringIn";
+            this.StringIn.UseVisualStyleBackColor = true;
+            this.StringIn.Click += new System.EventHandler(this.StringIn_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(376, 190);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(101, 33);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.StringIn);
             this.Controls.Add(this.btnRegeditCancel);
             this.Controls.Add(this.btnRegedit);
             this.Controls.Add(this.button2);
@@ -173,6 +196,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.Button btnRegedit;
         private System.Windows.Forms.Button btnRegeditCancel;
+        private System.Windows.Forms.Button StringIn;
+        private System.Windows.Forms.Button button3;
     }
 }
 

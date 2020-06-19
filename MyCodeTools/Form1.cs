@@ -21,16 +21,31 @@ namespace MyCodeTools
 
         #region 模板操作
 
-        private void btnClass_Click(object sender, EventArgs e)
+        private void DoTransformText<T>() where T : TClassBase
         {
             var str = tbxInput.Text;
-            var tClass = new TClass(str);
-            var ret = tClass.TransformText();
+            if(string.IsNullOrWhiteSpace(str)) return;
+            var tType = typeof(T);
+            var newT = (T)Activator.CreateInstance(typeof(T), str);
+            var method = tType.GetMethod("TransformText");
+            if(method==null) return;
+            var ret =(string) method.Invoke(newT, null);
             tbxShow.Text = ret;
             if (cbCopy.Checked)
             {
                 Clipboard.SetDataObject(ret);
             }
+        }
+
+
+        private void btnClass_Click(object sender, EventArgs e)
+        {
+            DoTransformText<TClass>();
+        }
+
+        private void StringIn_Click(object sender, EventArgs e)
+        {
+
         }
 
         #endregion
