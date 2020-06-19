@@ -57,6 +57,11 @@ namespace MyCodeTools
         {
             DoTransformText<TDateSet>();
         }
+
+        private void SeValue_Click(object sender, EventArgs e)
+        {
+
+        }
         #endregion
 
         #region Form1操作

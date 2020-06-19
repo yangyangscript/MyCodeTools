@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommonHelp.cs" />
+    <Compile Include="ParTSetValue.cs" />
     <Compile Include="TDateSet.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -67,6 +68,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TClass.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TSetValue.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TSetValue.tt</DependentUpon>
     </Compile>
     <Compile Include="TStringIn.cs">
       <AutoGen>True</AutoGen>
@@ -106,6 +112,10 @@
     <Content Include="TClass.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>TClass.cs</LastGenOutput>
+    </Content>
+    <Content Include="TSetValue.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>TSetValue.cs</LastGenOutput>
     </Content>
     <Content Include="TStringIn.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>

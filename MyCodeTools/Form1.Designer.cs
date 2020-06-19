@@ -42,6 +42,7 @@
             this.btnRegeditCancel = new System.Windows.Forms.Button();
             this.StringIn = new System.Windows.Forms.Button();
             this.DDateSet = new System.Windows.Forms.Button();
+            this.SeValue = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +87,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(375, 111);
+            this.button2.Location = new System.Drawing.Point(375, 150);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(101, 33);
             this.button2.TabIndex = 3;
@@ -119,7 +120,7 @@
             // 
             // btnRegedit
             // 
-            this.btnRegedit.Location = new System.Drawing.Point(375, 367);
+            this.btnRegedit.Location = new System.Drawing.Point(861, 444);
             this.btnRegedit.Name = "btnRegedit";
             this.btnRegedit.Size = new System.Drawing.Size(101, 33);
             this.btnRegedit.TabIndex = 4;
@@ -129,7 +130,7 @@
             // 
             // btnRegeditCancel
             // 
-            this.btnRegeditCancel.Location = new System.Drawing.Point(375, 406);
+            this.btnRegeditCancel.Location = new System.Drawing.Point(968, 444);
             this.btnRegeditCancel.Name = "btnRegeditCancel";
             this.btnRegeditCancel.Size = new System.Drawing.Size(101, 33);
             this.btnRegeditCancel.TabIndex = 5;
@@ -139,7 +140,7 @@
             // 
             // StringIn
             // 
-            this.StringIn.Location = new System.Drawing.Point(375, 150);
+            this.StringIn.Location = new System.Drawing.Point(375, 197);
             this.StringIn.Name = "StringIn";
             this.StringIn.Size = new System.Drawing.Size(101, 33);
             this.StringIn.TabIndex = 6;
@@ -149,7 +150,7 @@
             // 
             // DDateSet
             // 
-            this.DDateSet.Location = new System.Drawing.Point(376, 190);
+            this.DDateSet.Location = new System.Drawing.Point(375, 236);
             this.DDateSet.Name = "DDateSet";
             this.DDateSet.Size = new System.Drawing.Size(101, 33);
             this.DDateSet.TabIndex = 7;
@@ -157,11 +158,22 @@
             this.DDateSet.UseVisualStyleBackColor = true;
             this.DDateSet.Click += new System.EventHandler(this.DDateSet_Click);
             // 
+            // SeValue
+            // 
+            this.SeValue.Location = new System.Drawing.Point(375, 111);
+            this.SeValue.Name = "SeValue";
+            this.SeValue.Size = new System.Drawing.Size(101, 33);
+            this.SeValue.TabIndex = 8;
+            this.SeValue.Text = "赋值";
+            this.SeValue.UseVisualStyleBackColor = true;
+            this.SeValue.Click += new System.EventHandler(this.SeValue_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 450);
+            this.ClientSize = new System.Drawing.Size(1081, 480);
+            this.Controls.Add(this.SeValue);
             this.Controls.Add(this.DDateSet);
             this.Controls.Add(this.StringIn);
             this.Controls.Add(this.btnRegeditCancel);
@@ -199,6 +211,7 @@
         private System.Windows.Forms.Button btnRegeditCancel;
         private System.Windows.Forms.Button StringIn;
         private System.Windows.Forms.Button DDateSet;
+        private System.Windows.Forms.Button SeValue;
     }
 }
 
