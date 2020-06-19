@@ -41,7 +41,7 @@
             this.btnRegedit = new System.Windows.Forms.Button();
             this.btnRegeditCancel = new System.Windows.Forms.Button();
             this.StringIn = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.DDateSet = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,7 +68,7 @@
             this.tbxShow.Location = new System.Drawing.Point(494, 22);
             this.tbxShow.Multiline = true;
             this.tbxShow.Name = "tbxShow";
-            this.tbxShow.Size = new System.Drawing.Size(282, 416);
+            this.tbxShow.Size = new System.Drawing.Size(575, 416);
             this.tbxShow.TabIndex = 2;
             // 
             // cbCopy
@@ -147,21 +147,22 @@
             this.StringIn.UseVisualStyleBackColor = true;
             this.StringIn.Click += new System.EventHandler(this.StringIn_Click);
             // 
-            // button3
+            // DDateSet
             // 
-            this.button3.Location = new System.Drawing.Point(376, 190);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 33);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.DDateSet.Location = new System.Drawing.Point(376, 190);
+            this.DDateSet.Name = "DDateSet";
+            this.DDateSet.Size = new System.Drawing.Size(101, 33);
+            this.DDateSet.TabIndex = 7;
+            this.DDateSet.Text = "DDateSet";
+            this.DDateSet.UseVisualStyleBackColor = true;
+            this.DDateSet.Click += new System.EventHandler(this.DDateSet_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
+            this.ClientSize = new System.Drawing.Size(1081, 450);
+            this.Controls.Add(this.DDateSet);
             this.Controls.Add(this.StringIn);
             this.Controls.Add(this.btnRegeditCancel);
             this.Controls.Add(this.btnRegedit);
@@ -197,7 +198,7 @@
         private System.Windows.Forms.Button btnRegedit;
         private System.Windows.Forms.Button btnRegeditCancel;
         private System.Windows.Forms.Button StringIn;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button DDateSet;
     }
 }
 

@@ -21,7 +21,11 @@ namespace MyCodeTools
 
         #region 模板操作
 
-        private void DoTransformText<T>() where T : TClassBase
+        /// <summary>
+        /// 公共调用
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        private void DoTransformText<T>()
         {
             var str = tbxInput.Text;
             if(string.IsNullOrWhiteSpace(str)) return;
@@ -45,9 +49,14 @@ namespace MyCodeTools
 
         private void StringIn_Click(object sender, EventArgs e)
         {
-
+            DoTransformText<TStringIn>();
         }
 
+
+        private void DDateSet_Click(object sender, EventArgs e)
+        {
+            DoTransformText<TDateSet>();
+        }
         #endregion
 
         #region Form1操作

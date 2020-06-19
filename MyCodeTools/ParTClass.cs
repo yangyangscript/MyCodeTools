@@ -19,16 +19,18 @@ namespace MyCodeTools
         public TClass(string str)
         {
             _items = new List<TClassParms>();
-            if (string.IsNullOrWhiteSpace(str)) return;
-            List<string> spitlist;
-            if (str.Contains(',') || str.Contains('，'))
-            {
-                spitlist = str.Split(new char[] { ',', '，' }, StringSplitOptions.RemoveEmptyEntries).Select(s=>s.Trim()).ToList();
-            }
-            else
-            {
-                spitlist = str.Split(new string[] {"\r\n"},StringSplitOptions.RemoveEmptyEntries).Select(s => s.Trim()).ToList();
-            }
+            var spitlist = CommonHelp.SplitList(str);
+            if(!spitlist.Any()) return;
+            //if (string.IsNullOrWhiteSpace(str)) return;
+            //List<string> spitlist;
+            //if (str.Contains(',') || str.Contains('，'))
+            //{
+            //    spitlist = str.Split(new char[] { ',', '，' }, StringSplitOptions.RemoveEmptyEntries).Select(s=>s.Trim()).ToList();
+            //}
+            //else
+            //{
+            //    spitlist = str.Split(new string[] {"\r\n"},StringSplitOptions.RemoveEmptyEntries).Select(s => s.Trim()).ToList();
+            //}
             foreach (var spitStr in spitlist)
             {
                 TClassParms tParm;
