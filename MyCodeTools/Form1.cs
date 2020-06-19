@@ -60,7 +60,7 @@ namespace MyCodeTools
 
         private void SeValue_Click(object sender, EventArgs e)
         {
-
+            DoTransformText<TSetValue>();
         }
         #endregion
 
