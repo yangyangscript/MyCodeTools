@@ -33,27 +33,38 @@ namespace MyCodeTools
 
 	foreach(var item in _items)
 	{
+		if(!String.IsNullOrWhiteSpace(item.Summary))
+		{
 
             
             #line default
             #line hidden
             this.Write("/// <summary>\r\n/// ");
             
-            #line 11 "C:\临时的测试\MyCodeTools\MyCodeTools\TClass.tt"
+            #line 13 "C:\临时的测试\MyCodeTools\MyCodeTools\TClass.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(item.Summary));
             
             #line default
             #line hidden
-            this.Write("\r\n/// <summary>\r\npublic string ");
+            this.Write("\r\n/// </summary>\r\n");
             
-            #line 13 "C:\临时的测试\MyCodeTools\MyCodeTools\TClass.tt"
+            #line 15 "C:\临时的测试\MyCodeTools\MyCodeTools\TClass.tt"
+			
+		}
+
+            
+            #line default
+            #line hidden
+            this.Write("public string ");
+            
+            #line 18 "C:\临时的测试\MyCodeTools\MyCodeTools\TClass.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(item.Name));
             
             #line default
             #line hidden
             this.Write("  { get; set; }\r\n\r\n");
             
-            #line 15 "C:\临时的测试\MyCodeTools\MyCodeTools\TClass.tt"
+            #line 20 "C:\临时的测试\MyCodeTools\MyCodeTools\TClass.tt"
 
 	}
 

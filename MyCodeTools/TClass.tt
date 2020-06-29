@@ -6,10 +6,15 @@
 <#
 	foreach(var item in _items)
 	{
+		if(!String.IsNullOrWhiteSpace(item.Summary))
+		{
 #>
 /// <summary>
 /// <#=item.Summary#>
-/// <summary>
+/// </summary>
+<#			
+		}
+#>
 public string <#=item.Name#>  { get; set; }
 
 <#
