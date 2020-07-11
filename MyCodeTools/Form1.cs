@@ -62,6 +62,11 @@ namespace MyCodeTools
         {
             DoTransformText<TSetValue>();
         }
+
+        private void btnAutoMapper_Click(object sender, EventArgs e)
+        {
+            DoTransformText<TAutoMapper>();
+        }
         #endregion
 
         #region Form1操作

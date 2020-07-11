@@ -34,7 +34,7 @@
             this.btnClass = new System.Windows.Forms.Button();
             this.tbxShow = new System.Windows.Forms.TextBox();
             this.cbCopy = new System.Windows.Forms.CheckBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAutoMapper = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,14 +85,15 @@
             this.cbCopy.Text = "剪切板";
             this.cbCopy.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnAutoMapper
             // 
-            this.button2.Location = new System.Drawing.Point(375, 150);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 33);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "AutoMapper";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAutoMapper.Location = new System.Drawing.Point(375, 150);
+            this.btnAutoMapper.Name = "btnAutoMapper";
+            this.btnAutoMapper.Size = new System.Drawing.Size(101, 33);
+            this.btnAutoMapper.TabIndex = 3;
+            this.btnAutoMapper.Text = "AutoMapper";
+            this.btnAutoMapper.UseVisualStyleBackColor = true;
+            this.btnAutoMapper.Click += new System.EventHandler(this.btnAutoMapper_Click);
             // 
             // notifyIcon1
             // 
@@ -178,7 +179,7 @@
             this.Controls.Add(this.StringIn);
             this.Controls.Add(this.btnRegeditCancel);
             this.Controls.Add(this.btnRegedit);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnAutoMapper);
             this.Controls.Add(this.cbCopy);
             this.Controls.Add(this.tbxShow);
             this.Controls.Add(this.btnClass);
@@ -203,7 +204,7 @@
         private System.Windows.Forms.Button btnClass;
         private System.Windows.Forms.TextBox tbxShow;
         private System.Windows.Forms.CheckBox cbCopy;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAutoMapper;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
